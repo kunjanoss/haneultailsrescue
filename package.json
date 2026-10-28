@@ -1,0 +1,12 @@
+{
+  "name": "rescue-dogs-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first rescue dog adoption website prototype",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "inbox": "node inbox.js",
+    "test": "node --test"
+  }
+}

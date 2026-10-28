@@ -1,0 +1,24 @@
+/* Adoption enquiry form — aligned with the local premium design system. */
+.adoption-form-card{margin-top:28px;padding:clamp(20px,3vw,34px);background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow)}
+.adoption-form-card h2{font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;font-weight:500;font-size:clamp(1.65rem,3vw,2.2rem);margin:0 0 8px}
+.adoption-form-card .muted{margin:0 0 18px;color:var(--muted)}
+.adoption-form-card .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.adoption-form-card .wide{grid-column:1/-1}
+.adoption-form-card .field{display:grid;gap:7px;min-width:0}
+.adoption-form-card label{font-weight:600;color:var(--ink)}
+.adoption-form-card input:not([type=checkbox]),.adoption-form-card select,.adoption-form-card textarea{width:100%;min-width:0;border:1px solid #d9ddd3;border-radius:12px;background:#fffefa;color:var(--ink);padding:12px 14px;outline:none;transition:border-color .2s ease,box-shadow .2s ease}
+.adoption-form-card input:not([type=checkbox]),.adoption-form-card select{min-height:49px}
+.adoption-form-card textarea{min-height:116px;resize:vertical;line-height:1.55}
+.adoption-form-card input:focus,.adoption-form-card select:focus,.adoption-form-card textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #456b531c}
+.adoption-form-card .field-hint{font-size:.86rem;line-height:1.45;color:var(--muted)}
+.adoption-form-card .privacy-note{padding:14px 16px;border:1px solid #d6e2d0;border-radius:14px;background:#f0f5eb;color:#365540;font-size:.9rem;line-height:1.55}
+.adoption-form-card .checkline{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;font-weight:400;line-height:1.45}
+.adoption-form-card .checkline input{flex:0 0 auto;margin:4px 0 0;accent-color:var(--green)}
+.adoption-form-card .other-country-field[hidden]{display:none}
+.adoption-form-card .honeypot{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.adoption-form-card #form-result{min-height:1.5em;margin-top:12px;font-weight:600}
+.adoption-form-card #form-result.success{color:#2d6843}
+.adoption-form-card #form-result.danger{color:#9b322e}
+.adoption-form-card button:disabled{opacity:.68;cursor:wait}
+@media(max-width:520px){.adoption-form-card .form-grid{grid-template-columns:1fr;gap:15px}.adoption-form-card .wide{grid-column:auto}.adoption-form-card{padding:20px 16px}.adoption-form-card .button{width:100%;min-height:48px}}
+@media(prefers-reduced-motion:reduce){.adoption-form-card input,.adoption-form-card select,.adoption-form-card textarea{transition:none}}
