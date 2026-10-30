@@ -150,10 +150,10 @@
     const updateSummary = () => {
       const read = name => {
         const control = form.elements.namedItem(name);
-        if (!control) return '—';
-        if (control.tagName === 'SELECT') return control.selectedOptions[0]?.textContent || '—';
+        if (!control) return '-';
+        if (control.tagName === 'SELECT') return control.selectedOptions[0]?.textContent || '-';
         if (control.type === 'checkbox') return control.checked ? 'Yes' : 'No';
-        return control.value.trim() || '—';
+        return control.value.trim() || '-';
       };
       const countryValue = form.elements.country.value === 'other' ? read('otherCountry') : read('country');
       const dogValue = selectedDog?.name || (form.elements.dogId?.selectedOptions?.[0]?.textContent || j.unavailable);

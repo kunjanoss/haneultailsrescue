@@ -11,10 +11,10 @@
     "breed": "Mixed breed (example)",
     "location": "Belgium (example location)",
     "temperament": "Gentle and curious (example text)",
-    "health": "No real health information — this is example content.",
+    "health": "No real health information - this is example content.",
     "needs": "Example only: enjoys calm walks and a quiet place to rest.",
     "home": "Example only: a patient home willing to continue positive-reinforcement training.",
-    "description": "TEST EXAMPLE — Luna is fictional sample content used to test the website. She is not a real rescue dog and is not available for adoption.",
+    "description": "TEST EXAMPLE - Luna is fictional sample content used to test the website. She is not a real rescue dog and is not available for adoption.",
     "photo": "",
     "updatedAt": ""
   },
@@ -30,10 +30,10 @@
     "breed": "Mixed breed (example)",
     "location": "Netherlands (example location)",
     "temperament": "Playful and affectionate (example text)",
-    "health": "No real health information — this is example content.",
+    "health": "No real health information - this is example content.",
     "needs": "Example only: puppy socialisation, short play sessions, and a predictable routine.",
     "home": "Example only: an engaged home ready for puppy training.",
-    "description": "TEST EXAMPLE — Max is fictional sample content used to test the website. He is not a real rescue dog and is not available for adoption.",
+    "description": "TEST EXAMPLE - Max is fictional sample content used to test the website. He is not a real rescue dog and is not available for adoption.",
     "photo": "",
     "updatedAt": ""
   }

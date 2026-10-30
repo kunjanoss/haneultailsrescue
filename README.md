@@ -1,4 +1,4 @@
-# Haneul Tails Rescue — local rescue-dog website prototype
+# Haneul Tails Rescue - local rescue-dog website prototype
 
 A private, local-first website prototype for one rescue organization. It has a homepage, available-dog listing, individual dog profiles, search and filters, a four-language interface (Dutch, French, German, English), a local adoption-enquiry form, and a draft-review page.
 
@@ -73,7 +73,7 @@ Profiles are stored in `data/dogs.json`. A draft object can use this shape:
   "physicalDetails": "Verified, relevant physical details",
   "breed": "Breed or mix",
   "originCountry": "China",
-  "location": "Belgium — municipality/region",
+  "location": "Belgium - municipality/region",
   "temperament": "Verified description",
   "compatibility": {
     "children": "Verified assessment, if known",
