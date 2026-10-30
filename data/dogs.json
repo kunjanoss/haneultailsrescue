@@ -61,5 +61,55 @@
       "/data/photos/lucky/lucky-3.jpg"
     ],
     "updatedAt": ""
+  },
+  {
+    "id": "happy-bella",
+    "name": "Bella",
+    "status": "adopted",
+    "example": false,
+    "adoptedAt": "2025-08-15",
+    "adopterTestimonial": "Bella settled in within days. She is the sweetest companion and we cannot imagine life without her. The adoption process was smooth and the team was so supportive.",
+    "adopterPhoto": "",
+    "age": "3 years",
+    "size": "medium",
+    "breed": "Mixed breed",
+    "location": "Netherlands",
+    "originCountry": "China",
+    "temperament": "Gentle and curious",
+    "health": "Healthy and active",
+    "needs": "Daily walks and mental stimulation",
+    "home": "A patient home willing to continue positive-reinforcement training.",
+    "description": "Bella was rescued from a shelter in China and quickly won everyone over with her gentle nature.",
+    "photo": "/data/photos/lucky/lucky-1.jpg",
+    "photos": [
+      "/data/photos/lucky/lucky-1.jpg",
+      "/data/photos/lucky/lucky-2.jpg"
+    ],
+    "updatedAt": "2025-08-15"
+  },
+  {
+    "id": "happy-max",
+    "name": "Max",
+    "status": "adopted",
+    "example": false,
+    "adoptedAt": "2025-06-20",
+    "adopterTestimonial": "Max is a wonderful addition to our family. He loves playing in the garden and cuddling on the couch. Thank you for this opportunity.",
+    "adopterPhoto": "",
+    "age": "2 years",
+    "size": "small",
+    "breed": "Mixed breed",
+    "location": "Belgium",
+    "originCountry": "South Korea",
+    "temperament": "Playful and affectionate",
+    "health": "Good health, neutered",
+    "needs": "Regular exercise and socialisation",
+    "home": "An active home with time for training and play.",
+    "description": "Max was found as a stray in South Korea and has blossomed into a happy, confident dog.",
+    "photo": "/data/photos/lucky/lucky-1.jpg",
+    "photos": [
+      "/data/photos/lucky/lucky-1.jpg",
+      "/data/photos/lucky/lucky-2.jpg"
+    ],
+    "updatedAt": "2025-06-20"
   }
 ]

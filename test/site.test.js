@@ -246,4 +246,46 @@ test('dog-profile API and application journey integrations', async () => {
   assert.ok(ui.includes('class="selected-dog-card"'));
   assert.ok(ui.includes('name="dogId"'));
   assert.ok(ui.includes('Review your application'));
+  assert.ok(ui.includes('localStorage.removeItem(\'adoption-progress\')'));
+  assert.ok(ui.includes('saveApplicationProgress'));
+  assert.ok(ui.includes('restoreApplicationProgress'));
+  assert.ok(ui.includes('function whatsappButton'));
+});
+
+test('clean dog URLs and Schema.org markup', async () => {
+  const app = await (await fetch(base + '/app.js')).text();
+  assert.ok(app.includes('path.startsWith(\'/dog/\')'));
+  assert.ok(app.includes('/dog/${encodeURIComponent(d.id)}'));
+
+  const dogHtml = await (await fetch(base + '/dog.html')).text();
+  assert.ok(dogHtml.includes('application/ld+json'));
+  assert.ok(dogHtml.includes('"@type":"Pet"'));
+  assert.ok(dogHtml.includes('"@context":"https://schema.org"'));
+});
+
+test('WhatsApp button and mobile filter toggle are present', async () => {
+  const app = await (await fetch(base + '/app.js')).text();
+  assert.ok(app.includes('whatsappButton()'));
+  assert.ok(app.includes('https://wa.me/'));
+  assert.ok(app.includes('filter-toggle'));
+  assert.ok(app.includes('mobile-collapsed'));
+
+  const css = await (await fetch(base + '/adoption.css')).text();
+  assert.ok(css.includes('.whatsapp-float'));
+  assert.ok(css.includes('background:#25D366'));
+  assert.ok(css.includes('.filter-toggle'));
+  assert.ok(css.includes('.filter-panel.open'));
+});
+
+test('trust line and FAQ section are present in adoption info', async () => {
+  const ui = await (await fetch(base + '/adoption-ui.js')).text();
+  assert.ok(ui.includes('trustLine'));
+  assert.ok(ui.includes('trust-card'));
+  assert.ok(ui.includes('adoption-faq'));
+});
+
+test('descriptive alt text is used for dog photos', async () => {
+  const app = await (await fetch(base + '/app.js')).text();
+  assert.ok(app.includes('photo(d)') && app.includes('alt'));
+  assert.ok(app.includes('temperament'));
 });

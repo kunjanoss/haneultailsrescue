@@ -1,4 +1,90 @@
 .adoption-info,.application-page{padding-top:48px;padding-bottom:88px}.adoption-hero,.application-hero{max-width:760px;margin:0 auto 38px;text-align:center}.adoption-hero .button{margin-top:12px}.adoption-hero .lead,.application-hero .lead{font-size:1.12rem;color:var(--muted)}.adoption-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.adoption-card{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow);animation:adopt-rise .55s both}.adoption-card:nth-child(2n){animation-delay:.06s}.adoption-card h2{font-size:1.26rem;margin:10px 0 8px}.adoption-card p{color:var(--muted);margin:.45rem 0}.card-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--lime);color:var(--deep);font-size:1.3rem}.health-card{background:#f0f5ea}.fee-card{background:#263f31;color:#fff;border-color:#263f31}.fee-card p{color:#ecf1e8}.fee-card .eyebrow{color:#d8e2c7}.fee-total{display:block;font-size:3rem;letter-spacing:-.06em;margin:.2rem 0}.fee-total small{font-size:.85rem;letter-spacing:0;font-weight:500}.fee-split{display:flex;align-items:center;gap:14px;border-block:1px solid #ffffff35;padding:14px 0;margin:14px 0}.fee-split span{font-size:1.3rem;font-weight:700}.fee-split small{display:block;font-size:.76rem;font-weight:500;color:#dce4d9}.adoption-process,.adoption-faq{max-width:900px;margin:72px auto 0}.process-list{list-style:none;padding:0;margin:28px 0;display:grid;gap:14px}.process-list li{display:grid;grid-template-columns:48px 1fr;gap:18px;align-items:start;padding:20px 22px;background:var(--white);border:1px solid var(--line);border-radius:18px}.process-number{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--deep);color:#fff;font-weight:700}.process-list h3{margin:0 0 4px}.process-list p{margin:0;color:var(--muted)}.faq-list{display:grid;gap:10px}.faq-list details{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 22px}.faq-list summary{font-weight:700;cursor:pointer}.faq-list details p{margin:.8rem 0 0;color:var(--muted)}.adoption-bottom-cta{margin:56px auto 0;padding:34px;border-radius:24px;background:#e8eee1;text-align:center}.adoption-bottom-cta p{color:var(--muted)}.privacy-note{border:1px solid #cbd8c7;border-left:4px solid var(--green);border-radius:16px;padding:20px 22px;background:#eef3e9;color:var(--ink)}.application-privacy{margin:0 auto 32px;max-width:900px}.application-privacy h2{font-size:1.1rem;margin:0 0 6px}.application-privacy p{margin:0;color:var(--muted)}.application-progress{max-width:960px;margin:0 auto 26px;padding:20px 22px;background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.application-progress ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.application-progress li{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.82rem}.application-progress li span{display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:50%;border:1px solid var(--line);font-weight:700}.application-progress li[aria-current="step"]{color:var(--deep);font-weight:700}.application-progress li[aria-current="step"] span{background:var(--deep);color:white;border-color:var(--deep)}.progress-track{height:5px;background:#e7e9e1;border-radius:99px;margin:18px 0 8px;overflow:hidden}.progress-track span{display:block;height:100%;background:var(--green);border-radius:inherit;transition:width .35s ease}.application-progress p{margin:0;color:var(--muted);font-size:.8rem}.application-panel{max-width:960px;margin:0 auto;padding:30px;background:var(--white);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);animation:adopt-rise .35s both}.application-panel h2{margin:0 0 8px;font-size:1.55rem}.section-help{margin:0 0 24px;color:var(--muted);max-width:800px}.application-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.application-grid .field{min-width:0}.application-grid textarea{min-height:100px;resize:vertical}.field-hint{display:block;color:var(--muted);font-size:.79rem;line-height:1.45;margin-top:6px}.checkline{display:flex;align-items:flex-start;gap:10px;line-height:1.45}.checkline input{flex:0 0 auto;margin-top:5px;accent-color:var(--green)}.media-safe{padding:16px;border-radius:14px;background:#f6f5ef;border:1px solid var(--line)}.media-safe p{margin:8px 0 0;color:var(--muted);font-size:.88rem}.step-actions{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}.step-actions .button:disabled{opacity:.55;cursor:wait}.application-panel [role="status"]{margin-top:12px}.application-panel [role="status"].success{color:#23633b}.application-panel [role="status"].danger{color:#a63131}.honeypot{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}@keyframes adopt-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.adoption-card-grid{grid-template-columns:1fr}.application-progress ol{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}.application-grid{grid-template-columns:1fr}.application-panel{padding:22px 18px}.application-progress{padding:16px}.adoption-process,.adoption-faq{margin-top:50px}.adoption-info,.application-page{padding-top:32px}.fee-total{font-size:2.6rem}}@media(max-width:420px){.application-progress li{font-size:.72rem;gap:6px}.application-progress li span{flex-basis:25px;height:25px}.process-list li{padding:16px;grid-template-columns:38px 1fr;gap:12px}.process-number{width:36px;height:36px}.step-actions .button{padding:11px 16px}.adoption-card{padding:22px}.adoption-bottom-cta{padding:24px 16px}}
-.profile-adoption-cta{margin:38px auto 72px;padding:clamp(24px,4vw,42px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;border:1px solid #dbe4d2;border-radius:28px;background:linear-gradient(130deg,#f6f8ef,#edf3e6 58%,#e4eedb);box-shadow:0 20px 50px #203a2412;max-width:1080px;animation:adopt-rise .55s both}.profile-adoption-kicker{font-size:.72rem;font-weight:800;letter-spacing:.14em;color:var(--muted);margin:0 0 8px}.profile-adoption-cta h2{font-family:var(--display,inherit);font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.15;margin:0 0 10px;color:var(--deep)}.profile-adoption-note{max-width:680px;margin:0;color:var(--muted);line-height:1.65}.profile-apply-button{white-space:normal;min-width:230px;justify-content:center;transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease}.profile-apply-button:hover{transform:translateY(-3px);box-shadow:0 14px 28px #203a2425}.profile-apply-button:active{transform:translateY(0) scale(.98)}.selected-dog-card{max-width:760px;margin:0 auto 24px;display:grid;grid-template-columns:116px minmax(0,1fr);gap:20px;align-items:center;padding:16px 20px;border:1px solid var(--line);border-radius:22px;background:var(--white);box-shadow:var(--shadow)}.selected-dog-photo{width:116px;height:116px;overflow:hidden;border-radius:17px;background:linear-gradient(135deg,#f2eddf,#e4eadc);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--deep);text-align:center}.selected-dog-photo img{width:100%;height:100%;object-fit:cover}.selected-dog-photo>span{font-size:2.4rem}.selected-dog-photo small{font-size:.65rem;padding:4px}.selected-dog-copy h2{margin:5px 0;font-size:1.45rem}.selected-dog-copy .status-badge{display:inline-block;margin:4px 0 8px}.selected-dog-card .tiny{display:inline-block}.application-summary{padding:20px;border:1px solid var(--line);border-radius:18px;background:#f8f9f5}.application-summary h3{margin:0 0 6px}.application-summary>p{margin:0 0 16px;color:var(--muted)}.application-summary dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}.application-summary dl>div{padding:10px 12px;background:var(--white);border-radius:12px;min-width:0}.application-summary dt{font-size:.75rem;font-weight:700;color:var(--muted)}.application-summary dd{margin:4px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.application-progress{scroll-margin-top:20px}.application-page .step-actions{scroll-margin-bottom:16px}
+.profile-adoption-cta{margin:38px auto 72px;padding:clamp(24px,4vw,42px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;border:1px solid #dbe4d2;border-radius:28px;background:linear-gradient(130deg,#f6f8ef,#edf3e6 58%,#e4eedb);box-shadow:0 20px 50px #203a2412;max-width:1080px;animation:adopt-rise .55s both}.profile-adoption-kicker{font-size:.72rem;font-weight:800;letter-spacing:.14em;color:var(--muted);margin:0 0 8px}.profile-adoption-cta h2{font-family:var(--display,inherit);font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.15;margin:0 0 10px;color:var(--deep)}.profile-adoption-note{max-width:680px;margin:0;color:var(--muted);line-height:1.65}.profile-apply-button{white-space:normal;min-width:230px;justify-content:center;transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease}.profile-apply-button:hover{transform:translateY(-3px);box-shadow:0 14px 28px #203a2425}.profile-apply-button:active{transform:translateY(0) scale(.98)}.selected-dog-card{max-width:760px;margin:0 auto 24px;display:grid;grid-template-columns:116px minmax(0,1fr);gap:20px;align-items:center;padding:16px 20px;border:1px solid var(--line);border-radius:22px;background:var(--white);box-shadow:var(--shadow)}.selected-dog-photo{width:116px;height:116px;overflow:hidden;border-radius:17px;background:linear-gradient(135deg,#f2eddf,#e4eadc);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--deep);text-align:center}.selected-dog-photo img{width:100%;height:100%;object-fit:cover}.selected-dog-photo>span{font-size:2.4rem}.selected-dog-photo small{font-size:.65rem;padding:4px}.selected-dog-copy h2{margin:5px 0;font-size:1.45rem}.selected-dog-copy .status-badge{display:inline-block;margin:4px 0 8px}.selected-dog-card .tiny{display:inline-block}.application-summary{padding:20px;border:1px solid var(--line);border-radius:18px;background:#f8f9f5}.application-summary h3{margin:0 0 6px}.application-summary>p{margin:0 0 10px}.application-summary dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin:0}.application-summary dt{font-size:.78rem;color:var(--muted);margin:0 0 2px}.application-summary dd{margin:0;font-weight:600}.status-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.status-badge.status-available{background:#e6f4ea;color:#1e7e34}.status-badge.status-reserved{background:#fff3cd;color:#856404}.status-badge.status-adopted{background:#d1ecf1;color:#0c5460}.status-badge.status-draft{background:#e2e3e5;color:#383d41}.status-badge.status-example{background:#f8d7da;color:#721c24}.status-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.7}
 @media(max-width:760px){.profile-adoption-cta{grid-template-columns:1fr;margin:28px 0 52px;gap:18px}.profile-apply-button{width:100%;min-width:0}.selected-dog-card{grid-template-columns:88px minmax(0,1fr);gap:14px;padding:12px}.selected-dog-photo{width:88px;height:88px}.application-summary dl{grid-template-columns:1fr}}
 @media(max-width:420px){.profile-adoption-cta{padding:22px;border-radius:22px}.selected-dog-card{margin-inline:0}.selected-dog-copy h2{font-size:1.2rem}.application-summary{padding:14px}.application-summary dl{gap:7px}}
+
+/* Mobile tap targets */
+@media(max-width:760px){
+  .dog-card,.dog-card a,.button,.photo-thumb,.profile-apply-button,.share-button,.quiz-btn{min-height:48px;min-width:48px}
+  .filter-panel .field{margin-bottom:16px}
+  .filter-panel select,.filter-panel input{min-height:48px;font-size:16px}
+}
+
+/* Swipeable gallery */
+.profile-gallery{position:relative;overflow:hidden}
+.profile-photo img{transition:opacity .2s ease;user-select:none;-webkit-user-drag:none}
+.photo-thumbnails{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.photo-thumb{width:56px;height:56px;border-radius:12px;overflow:hidden;border:2px solid transparent;background:none;padding:0;cursor:pointer;opacity:.7;transition:opacity .2s ease,border-color .2s ease}
+.photo-thumb.is-active{opacity:1;border-color:var(--deep)}
+.photo-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Sticky CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--white);border-top:1px solid var(--line);padding:12px 16px;box-shadow:0 -4px 20px #203a2412;z-index:100;display:flex;justify-content:center}
+.sticky-cta .button{width:100%;max-width:480px;justify-content:center}
+
+/* Share buttons */
+.profile-share{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.share-label{display:block;font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.08em}
+.share-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.share-button{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:12px;border:1px solid var(--line);background:var(--white);color:var(--deep);text-decoration:none;font-size:.88rem;font-weight:600;transition:background .2s ease,transform .2s ease}
+.share-button:hover{background:#f5f5f5;transform:translateY(-1px)}
+.share-button.whatsapp{background:#e8f5e9;border-color:#c8e6c9;color:#2e7d32}
+.share-button.facebook{background:#e3f2fd;border-color:#bbdefb;color:#1565c0}
+.share-button.instagram{background:#fce4ec;border-color:#f8bbd0;color:#c2185b}
+
+/* Express interest form */
+.express-form{margin-top:32px;padding:24px;border:1px solid var(--line);border-radius:20px;background:#f8f9f5}
+.express-form .field{margin-bottom:16px}
+.express-form input[readonly]{background:#f0f0f0;color:var(--muted)}
+
+/* Perfect match quiz */
+.perfect-match{margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+.quiz-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+.quiz-question{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.quiz-question label{display:block;font-weight:700;margin-bottom:10px;font-size:.92rem}
+.quiz-options{display:flex;gap:10px;flex-wrap:wrap}
+.quiz-btn{padding:10px 16px;border-radius:12px;border:1px solid var(--line);background:var(--white);color:var(--deep);font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s ease}
+.quiz-btn:hover{border-color:var(--deep);background:#f5f5f5}
+.quiz-btn.is-active{background:var(--deep);color:white;border-color:var(--deep)}
+.quiz-result{margin-top:18px;padding:16px 20px;background:#e8f5e9;border-radius:14px;border:1px solid #c8e6c9}
+.quiz-result p{margin:0;color:#2e7d32}
+
+/* Happy tails */
+.happy-tails{margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+.happy-tails-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
+.happy-tail-card{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.happy-tail-photo{width:100%;height:180px;overflow:hidden;background:linear-gradient(135deg,#f2eddf,#e4eadc);display:flex;align-items:center;justify-content:center}
+.happy-tail-photo img{width:100%;height:100%;object-fit:cover}
+.happy-tail-photo span{font-size:3rem}
+.happy-tail-copy{padding:16px 18px}
+.happy-tail-copy h3{margin:0 0 8px;font-size:1.1rem}
+.happy-tail-copy .testimonial{margin:0;color:var(--muted);font-size:.88rem;line-height:1.5;font-style:italic}
+.happy-tail-copy .tiny{display:block;margin-top:8px;color:var(--muted);font-size:.75rem}
+
+/* Trust line */
+.trust-line{margin-top:16px;padding:12px 16px;background:#e8f5e9;border-radius:12px;font-size:.88rem;color:#2e7d32;font-weight:600}
+
+/* Status badge new */
+.status-badge.status-new{background:#e8f5e9;color:#2e7d32}
+
+/* FAQ section */
+.faq-section,.adoption-faq{margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+.faq-section h2,.adoption-faq h2{margin-bottom:20px}
+
+/* Mobile filter dropdown */
+@media(max-width:760px){
+  .filter-panel{position:relative}
+  .filter-panel .field{display:none}
+  .filter-panel .field:first-child{display:block}
+  .filter-toggle{display:flex !important}
+}
+.filter-toggle{display:none;width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--line);background:var(--white);font-size:1rem;font-weight:600;color:var(--deep);justify-content:space-between;align-items:center;margin-bottom:16px;cursor:pointer}
+.filter-toggle::after{content:'+';font-size:1.4rem;font-weight:700;color:var(--muted)}
+.filter-toggle.open::after{content:'−'}
+.filter-panel.open .field{display:block}
+
+/* WhatsApp button */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px;box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:999;transition:transform .2s ease}
+.whatsapp-float:hover{transform:scale(1.05)}
+.whatsapp-float:active{transform:scale(.95)}
+@media(max-width:760px){.whatsapp-float{bottom:16px;right:16px;width:52px;height:52px}}

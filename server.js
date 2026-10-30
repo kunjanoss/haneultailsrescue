@@ -41,6 +41,17 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/api/dogs') return json(res, 200, dogs().filter(d => ['available', 'example'].includes(d.status)));
     if (req.method === 'GET' && url.pathname === '/api/all-dogs') return json(res, 200, dogs());
     if (req.method === 'GET' && url.pathname === '/api/review') return json(res, 200, dogs().filter(d => ['draft', 'available'].includes(d.status)));
+    const dogSlugMatch = url.pathname.match(/^\/dog\/([a-zA-Z0-9_-]+)$/);
+    if (req.method === 'GET' && dogSlugMatch) {
+      const dogId = decodeURIComponent(dogSlugMatch[1]);
+      const dog = dogs().find(d => d.id === dogId);
+      if (!dog) return json(res, 404, { error: 'Dog profile not found.' });
+      const filename = path.resolve(ROOT, '/dog.html');
+      const ext = path.extname(filename).toLowerCase();
+      res.writeHead(200, { 'Content-Type': MIME[ext], 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'Content-Security-Policy': "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" });
+      fs.createReadStream(filename).pipe(res);
+      return;
+    }
     if (req.method === 'POST' && url.pathname === '/api/enquiries') {
       if (!enquiryStoreReady) return json(res, 503, { error: 'Secure local storage is unavailable.' });
       if (!/^application\/json(?:;|$)/i.test(req.headers['content-type'] || '')) return json(res, 415, { error: 'JSON content type required.' });
