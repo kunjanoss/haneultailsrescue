@@ -36,5 +36,29 @@
     "description": "TEST EXAMPLE - Max is fictional sample content used to test the website. He is not a real rescue dog and is not available for adoption.",
     "photo": "",
     "updatedAt": ""
+  },
+  {
+    "id": "lucky",
+    "name": "Lucky",
+    "status": "draft",
+    "example": false,
+    "vaccinatedConfirmed": false,
+    "documentationConfirmed": false,
+    "age": "5 years",
+    "size": "small",
+    "breed": "",
+    "location": "",
+    "temperament": "Cheerful and playful. Enjoys attention, walks, and playing with other dogs.",
+    "health": "",
+    "needs": "Needs details to be confirmed before publishing.",
+    "home": "Needs details to be confirmed before publishing.",
+    "description": "Lucky is a cheerful boy. He loves playing with other dogs and really enjoys attention and walks. He was found on the street. Pending review: temperament, care needs, and ideal home details should be confirmed before this listing is approved.",
+    "photo": "/data/photos/lucky/lucky-1.jpg",
+    "photos": [
+      "/data/photos/lucky/lucky-1.jpg",
+      "/data/photos/lucky/lucky-2.jpg",
+      "/data/photos/lucky/lucky-3.jpg"
+    ],
+    "updatedAt": ""
   }
 ]
