@@ -254,8 +254,8 @@ test('dog-profile API and application journey integrations', async () => {
 
 test('clean dog URLs and Schema.org markup', async () => {
   const app = await (await fetch(base + '/app.js')).text();
-  assert.ok(app.includes('path.startsWith(\'/dog/\')'));
-  assert.ok(app.includes('/dog/${encodeURIComponent(d.id)}'));
+  assert.ok(app.includes('path.startsWith(\'/dog.html\')'));
+  assert.ok(app.includes('/dog.html?id=${encodeURIComponent(d.id)}'));
 
   const dogHtml = await (await fetch(base + '/dog.html')).text();
   assert.ok(dogHtml.includes('application/ld+json'));

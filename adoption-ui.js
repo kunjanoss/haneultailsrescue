@@ -133,7 +133,7 @@
     const outdoors = [['garden',x.garden],['terrace',x.terrace],['shared',x.sharedOutdoor],['none',x.noOutdoor]];
     const alone = x.aloneChoices.map((label, i) => [["under-2h","2-4h","4-6h","over-6h","varies"][i], label]);
     const selectedPhoto = selectedDog?.photo || (selectedDog ? dogPhotoSources(selectedDog)[0] : '');
-    const backHref = requested ? `/dog/${encodeURIComponent(requested)}` : '/dogs.html';
+    const backHref = requested ? `/dog.html?id=${encodeURIComponent(requested)}` : '/dogs.html';
     const selectedDogMarkup = dogSpecific ? `<aside class="selected-dog-card" aria-label="${esc(j.selectedDogHeading)}"><div class="selected-dog-photo">${selectedPhoto ? `<img src="${esc(selectedPhoto)}" alt="${esc(selectedDog?.name || '')}">` : `<span aria-hidden="true">🐕</span><small>${esc(j.photoMissing)}</small>`}</div><div class="selected-dog-copy"><span class="eyebrow">${esc(j.selectedDogHeading)}</span><h2>${esc(selectedDog?.name || j.unavailable)}</h2>${selectedDog?.status && selectedDog.status !== 'available' ? `<p class="status-badge status-${esc(selectedDog.status)}">${esc(selectedDog.status === 'reserved' ? j.reserved : selectedDog.status === 'adopted' ? j.adopted : j.unavailable)}</p>` : ''}<a class="tiny" href="${esc(backHref)}">← ${esc(j.backToDog)}</a></div></aside>` : '';
     const dogIdentityField = dogSpecific ? `<input type="hidden" name="dogId" value="${esc(requested)}">` : '';
     const dogPreferenceField = dogSpecific ? '' : select('dog-preference','dogId',x.preference,dogOptions);
