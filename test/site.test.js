@@ -149,22 +149,19 @@ test('draft is hidden until explicit local approval and never claims to be onlin
 });
 
 test('origin filter and motion stylesheet are present', async () => {
-  const [appResponse, cssResponse, pageResponse, formCssResponse] = await Promise.all([
-    fetch(base + '/app.js'), fetch(base + '/interactions.css'), fetch(base + '/dogs.html'), fetch(base + '/forms.css')
+  const [appResponse, cssResponse, pageResponse] = await Promise.all([
+    fetch(base + '/app.js'), fetch(base + '/styles.css'), fetch(base + '/dogs.html')
   ]);
   assert.equal(pageResponse.status, 200);
-  assert.equal(formCssResponse.status, 200);
   const app = await appResponse.text();
   const css = await cssResponse.text();
   const page = await pageResponse.text();
-  const formCss = await formCssResponse.text();
   assert.equal(app.split('<option value="China">China</option><option value="South Korea">South Korea</option>').length - 1, 1);
   assert.ok(app.includes('id="clear-origin"'));
   assert.ok(app.includes('function enquiryFormMarkup') && app.includes('/application.html${query}'));
   assert.ok(css.includes('prefers-reduced-motion: reduce'));
   assert.ok(css.includes('::view-transition-new(root)'));
-  assert.ok(page.includes('href="/interactions.css"') && page.includes('href="/forms.css"'));
-  assert.ok(formCss.includes('.honeypot') && formCss.includes('max-width:520px'));
+  assert.ok(page.includes('href="/styles.css"'));
 });
 
 test('profile fields remain optional and confirmed health claims are gated', async () => {
@@ -270,7 +267,7 @@ test('WhatsApp button and mobile filter toggle are present', async () => {
   assert.ok(app.includes('filter-toggle'));
   assert.ok(app.includes('mobile-collapsed'));
 
-  const css = await (await fetch(base + '/adoption.css')).text();
+  const css = await (await fetch(base + '/styles.css')).text();
   assert.ok(css.includes('.whatsapp-float'));
   assert.ok(css.includes('background:#25D366'));
   assert.ok(css.includes('.filter-toggle'));

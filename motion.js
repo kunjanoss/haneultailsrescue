@@ -24,24 +24,34 @@
       }
       document.documentElement.classList.add('motion-ready');
       const items = [...app.querySelectorAll('.hero-grid > *, .section-head, .story-copy, .story-art, .dog-card, .profile-layout > *, .form-card, .review-card')].filter(item => !item.closest('#results'));
+      const bounds = [];
       items.forEach(item => {
         if (item.classList.contains('reveal')) return;
-        const bounds = item.getBoundingClientRect();
+        bounds.push([item, item.getBoundingClientRect()]);
+      });
+      items.forEach((item, i) => {
+        if (item.classList.contains('reveal')) return;
         item.classList.add('reveal');
-        if (bounds.bottom < 0 || bounds.top < window.innerHeight) item.classList.add('is-visible');
+        const [_, rect] = bounds[i] || [item, { bottom: 0, top: 0 }];
+        if (rect.bottom < 0 || rect.top < window.innerHeight) item.classList.add('is-visible');
         else observer.observe(item);
       });
     });
   };
 
   const revealPassedSections = () => {
-    for (const item of app.querySelectorAll('.reveal:not(.is-visible)')) {
-      const bounds = item.getBoundingClientRect();
-      if (bounds.bottom < 0 || bounds.top < window.innerHeight) {
+    const items = [...app.querySelectorAll('.reveal:not(.is-visible)')];
+    const bounds = [];
+    items.forEach(item => {
+      bounds.push([item, item.getBoundingClientRect()]);
+    });
+    items.forEach((item, i) => {
+      const [_, rect] = bounds[i] || [item, { bottom: 0, top: 0 }];
+      if (rect.bottom < 0 || rect.top < window.innerHeight) {
         item.classList.add('is-visible');
         observer.unobserve(item);
       }
-    }
+    });
   };
   let scrollQueued = false;
   const onScroll = () => {
