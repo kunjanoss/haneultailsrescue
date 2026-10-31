@@ -49,11 +49,31 @@
     "breed": "",
     "location": "",
     "originCountry": "",
-    "temperament": "Cheerful and playful. Enjoys attention, walks, and playing with other dogs. Gets along well with other dogs and cats. House-trained, walks nicely on a leash, and is comfortable in a car.",
+    "temperament": {
+      "nl": "Vrolijk en speels. Houdt van aandacht, wandelingen en spelen met andere honden. Komt goed overeen met andere honden en katten. Zindelijk, loopt prettig aan de lijn en is prettig in de auto.",
+      "en": "Cheerful and playful. Enjoys attention, walks, and playing with other dogs. Gets along well with other dogs and cats. House-trained, walks nicely on a leash, and is comfortable in a car.",
+      "fr": "Joyeux et joueur. Aime l'attention, les promenades et jouer avec d'autres chiens. S'entend bien avec les autres chiens et les chats. Propre, marche bien en laisse et est à l'aise en voiture.",
+      "de": "Fröhlich und verspielt. Genießt Aufmerksamkeit, Spaziergänge und das Spielen mit anderen Hunden. Verträgt sich gut mit anderen Hunden und Katzen. Stubenrein, läuft gut an der Leine und fühlt sich im Auto wohl."
+    },
     "health": "",
-    "needs": "Lucky needs an active home where he can enjoy daily walks and companionship. His care needs and any ongoing health details should be confirmed with the rescue before adoption.",
-    "home": "Lucky would suit a home that can give him attention, regular exercise, and the chance to socialise safely with other animals.",
-    "description": "Lucky is a cheerful small dog who loves playing with other dogs and really enjoys attention and walks. He was found on the street and is now looking for a safe, loving home. Lucky is house-trained, walks nicely on a leash, and is comfortable in a car. Some details about his exact origin and full medical history are still being confirmed.",
+    "needs": {
+      "nl": "Lucky heeft een actief thuis nodig waar hij dagelijkse wandelingen en gezelschap kan genieten. Zijn verzorgingsbehoeften en eventuele lopende gezondheidsdetails moeten voor adoption bevestigd worden bij de rescue.",
+      "en": "Lucky needs an active home where he can enjoy daily walks and companionship. His care needs and any ongoing health details should be confirmed with the rescue before adoption.",
+      "fr": "Lucky a besoin d'un foyer actif où il peut profiter de promenades quotidiennes et de compagnie. Ses besoins de soins et les détails de santé en cours doivent être confirmés auprès du refuge avant l'adoption.",
+      "de": "Lucky braucht ein aktives Zuhause, in dem er tägliche Spaziergänge und Gesellschaft genießen kann. Seine Pflegebedürfnisse und eventuelle laufende Gesundheitsdetails sollten vor der Adoption bei der Rettungsorganisation bestätigt werden."
+    },
+    "home": {
+      "nl": "Lucky zou geschikt zijn voor een thuis dat hem aandacht, regelmatige lichaamsbeweging en de kans kan geven om veilig te socialiseren met andere dieren.",
+      "en": "Lucky would suit a home that can give him attention, regular exercise, and the chance to socialise safely with other animals.",
+      "fr": "Lucky conviendrait à un foyer qui peut lui donner de l'attention, de l'exercice régulier et la chance de socialiser en toute sécurité avec d'autres animaux.",
+      "de": "Lucky würde zu einem Zuhause passen, das ihm Aufmerksamkeit, regelmäßige Bewegung und die Chance geben kann, sich sicher mit anderen Tieren zu sozialisieren."
+    },
+    "description": {
+      "nl": "Lucky is een vrolijke kleine hond die het leuk vindt om met andere honden te spelen en die veel van aandacht en wandelen houdt. Hij werd op straat gevonden en is nu op zoek naar een veilig, liefdevol thuis. Lucky is zindelijk, loopt prettig aan de lijn en is prettig in de auto. Sommige details over zijn exacte herkomst en volledige medische geschiedenis worden nog bevestigd.",
+      "en": "Lucky is a cheerful small dog who loves playing with other dogs and really enjoys attention and walks. He was found on the street and is now looking for a safe, loving home. Lucky is house-trained, walks nicely on a leash, and is comfortable in a car. Some details about his exact origin and full medical history are still being confirmed.",
+      "fr": "Lucky est un petit chien joyeux qui aime jouer avec d'autres chiens et qui apprécie vraiment l'attention et les promenades. Il a été trouvé dans la rue et cherche maintenant un foyer sûr et aimant. Lucky est propre, marche bien en laisse et est à l'aise en voiture. Certains détails sur son origine exacte et son historique médical complet sont encore en cours de confirmation.",
+      "de": "Lucky ist ein fröhlicher kleiner Hund, der gerne mit anderen Hunden spielt und viel Liebe zu Aufmerksamkeit und Spaziergängen hat. Er wurde auf der Straße gefunden und sucht jetzt ein sicheres, liebevolles Zuhause. Lucky ist stubenrein, läuft gut an der Leine und fühlt sich im Auto wohl. Einige Details zu seiner genauen Herkunft und vollständigen Krankengeschichte werden noch bestätigt."
+    },
     "photo": "/data/photos/lucky/lucky-1.jpg",
     "photos": [
       "/data/photos/lucky/lucky-1.jpg",
